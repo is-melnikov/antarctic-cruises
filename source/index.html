@@ -13,7 +13,7 @@
       <header class="main-header">
         <div class="container container--main-header">
           <a href="" class="main-header__logo logo">
-            <img class="logo__icon" src="" width="70" height="38" alt="Логотип сайта Круизы в Антарктику." >
+            <img class="logo__icon" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику.">
           </a>
           <nav class="main-heder__navigation navigation">
             <ul class="navigation__list">
@@ -46,22 +46,34 @@
               <h2 class="promo-block__title">Путешествие на край Земли</h2>
               <p class="promo-block__description">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
             </div>
-            <img class="promo__image" width="560" height="301" src="" alt="Пингвины.">
+            <picture>
+              <source type="image/webp" srcset="./img/promo-image.webp, ./img/promo-image@2x.webp 2x">
+              <img class="promo__image" src="./img/promo-image.jpg" srcset="./img/promo-image@2x.jpg" width="560" height="301" alt="Пингвины.">
+            </picture>
           </div>
         </section>
         <section class="advantages" id="advantages">
           <div class="container container--advantages">
             <h2 class="advantages__title">Преимущества</h2>
             <ul class="advantages__list">
-              <li class="advantages__item advantages__item--ship">
+              <li class="advantages__item">
+                <svg class="social__icon" width="27" height="32">
+                  <use xlink:href="img/sprite.svg#ship"></use>
+                </svg>
                 <h3>Небольшой круизный лайнер</h3>
                 <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
               </li>
-              <li class="advantages__item advantages__item--all-inclusive">
+              <li class="advantages__item">
+                <svg class="social__icon" width="38" height="32">
+                  <use xlink:href="img/sprite.svg#double-tick"></use>
+                </svg>
                 <h3>Система все включено</h3>
                 <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
               </li>
-              <li class="advantages__item advantages__item--excursion">
+              <li class="advantages__item">
+                <svg class="social__icon" width="44" height="32">
+                  <use xlink:href="img/sprite.svg#boat"></use>
+                </svg>
                 <h3>Экскурсионные туры на Zodiac</h3>
                 <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiack c опытными экскурсоводами.</p>
               </li>
@@ -269,7 +281,7 @@
       <footer class="main-footer">
         <div class="container container--main-footer">
           <a href="" class="main-footer__logo logo">
-            <img class="logo__icon" src="" width="70" height="38" alt="Логотип сайта Круизы в Антарктику." >
+            <img class="logo__icon" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику." >
           </a>
           <nav class="main-footer__navigation navigation">
             <ul class="navigation__list">
@@ -294,7 +306,7 @@
                 <a class="social__link" href="#">
                   <h3 class="visually-hidden">Мы в Одноклассниках.</h3>
                   <svg class="social__icon" width="12" height="20">
-                    <use xlink:href="img/sprite_auto.svg#ok"></use>
+                    <use xlink:href="img/sprite.svg#ok"></use>
                   </svg>
                 </a>
               </li>
@@ -302,7 +314,7 @@
                 <a class="social__link" href="#">
                   <h3 class="visually-hidden">Мы в Дзене.</h3>
                   <svg class="social__icon" width="20" height="20">
-                    <use xlink:href="img/sprite_auto.svg#dzen"></use>
+                    <use xlink:href="img/sprite.svg#dzen"></use>
                   </svg>
                 </a>
               </li>
@@ -310,7 +322,7 @@
                 <a class="social__link" href="#">
                   <h3 class="visually-hidden">Мы в Реддите.</h3>
                   <svg class="social__icon" width="20" height="20">
-                    <use xlink:href="img/sprite_auto.svg#reddit"></use>
+                    <use xlink:href="img/sprite.svg#reddit"></use>
                   </svg>
                 </a>
               </li>
