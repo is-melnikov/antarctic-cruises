@@ -13,13 +13,24 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
-@import "global/container";
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
+@import "blocks/main-header";
+@import "blocks/container";
+@import "blocks/main-block";
+@import "blocks/logo";
+@import "blocks/navigation";
+@import "blocks/promo-block";
+@import "blocks/advantages";
+@import "blocks/cruises";
+@import "blocks/card";
+@import "blocks/booking";
+@import "blocks/form";
+@import "blocks/contacts";
+@import "blocks/main-footer";
+@import "blocks/social";
 
 // ---------------------------------
 
