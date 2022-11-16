@@ -6,17 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Сервис бронирования путешествий в Антарктику">
     <title>Круизы в Антарктику</title>
+    <link rel="preload" href="./fonts/montserrat-regular.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-medium.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-semibold.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="main-header">
-        <div class="container container--main-header">
-          <a href="" class="main-header__logo logo">
-            <img class="logo__icon" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику.">
+        <div class="container container--main-header menu menu--closed menu--nojs">
+          <a href="#" class="main-header__logo logo">
+            <svg class="logo__icon" width="70" height="38">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
           </a>
+          <button class="navigation__toggle" type="button">
+            <span class="navigation__toggle-bar"></span>
+            <span class="visually-hidden">Открыть навигацию сайта.</span>
+          </button>
           <nav class="main-heder__navigation navigation">
-            <ul class="navigation__list">
+            <ul class="navigation__list reset-list">
               <li class="navigation__item">
                 <a class="navigation__link" href="#advantages">Преимущества </a>
               </li>
@@ -32,14 +46,14 @@
             </ul>
           </nav>
         </div>
-      </header>
-      <main>
         <section class="main-block">
           <div class="container container--main-block">
             <h1 class="main-block__title">Круизы в Антарктику </h1>
             <p class="main-block__description">Волшебный мир айсбергов и пингвинов</p>
           </div>
         </section>
+      </header>
+      <main>
         <section class="promo-block">
           <div class="container container--promo-block">
             <div class="promo-block__text-wrapper">
@@ -55,7 +69,7 @@
         <section class="advantages" id="advantages">
           <div class="container container--advantages">
             <h2 class="advantages__title">Преимущества</h2>
-            <ul class="advantages__list">
+            <ul class="advantages__list reset-list">
               <li class="advantages__item">
                 <svg class="social__icon" width="27" height="32">
                   <use xlink:href="img/sprite.svg#ship"></use>
@@ -82,7 +96,7 @@
         </section>
         <section class="cruises" id="cruises">
           <h2 class="cruises__title">Ближайшие круизы</h2>
-          <ul class="cruises__list">
+          <ul class="cruises__list reset-list">
             <li class="cruises__item card">
               <div class="card__wrapper">
                 <h3 class="card__title">Круиз "Астория"</h3>
@@ -268,7 +282,7 @@
             <div class="contacts__wrapper">
               <p class="contacts__description">У вас ещё остались вопросы или сомнения?
                 Приезжайте к нам в офис и мы вам все расскажем.</p>
-              <ul class="contacts__list">
+              <ul class="contacts__list reset-list">
                 <li class="contacts__item">
                   <a class="contacts__link contacts__link--address" href="#">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</a>
                 </li>
@@ -283,10 +297,12 @@
       <footer class="main-footer">
         <div class="container container--main-footer">
           <a href="" class="main-footer__logo logo">
-            <img class="logo__icon" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику." >
+            <svg class="logo__icon" width="70" height="38">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
           </a>
           <nav class="main-footer__navigation navigation">
-            <ul class="navigation__list">
+            <ul class="navigation__list reset-list">
               <li class="navigation__item">
                 <a class="navigation__link" href="#advantages">Преимущества </a>
               </li>
@@ -303,7 +319,7 @@
           </nav>
           <section class="main-footer__social social">
             <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-            <ul class="social__list">
+            <ul class="social__list reset-list">
               <li class="social__item">
                 <a class="social__link" href="#">
                   <h3 class="visually-hidden">Мы в Одноклассниках.</h3>

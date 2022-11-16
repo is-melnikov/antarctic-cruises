@@ -1,0 +1,140 @@
+.menu--closed {
+  @include vp-767 {
+    & .navigation {
+      display: none;
+    }
+
+    & .navigation__toggle {
+      position: absolute;
+      right: 22px;
+      top: 24px;
+      z-index: 2;
+      display: block;
+      width: 24px;
+      height: 12px;
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+
+    & .navigation__toggle-bar {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: $color-base-white;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 2px;
+        background-color: $color-base-white;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 24px;
+        height: 2px;
+        background-color: $color-base-white;
+      }
+    }
+  }
+}
+
+.menu--opened {
+  @include vp-767 {
+    & .navigation {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 90%;
+      min-height: 500px;
+      padding: 85px 25px 25px;
+      background-color: $color-base-white;
+    }
+
+    & .main-header__logo {
+      position: absolute;
+      top: 20px;
+      left: 15%;
+      z-index: 2;
+      fill: $color-base-black;
+    }
+
+    & .logo__icon {
+      fill: $color-base-black;
+    }
+
+    & .navigation__toggle {
+      position: absolute;
+      right: 22px;
+      top: 18px;
+      z-index: 2;
+      display: block;
+      width: 13px;
+      height: 13px;
+      padding: 11px;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+
+    & .navigation__toggle-bar {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 3px;
+        width: 16px;
+        height: 2px;
+        background-color: $color-base-black;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.menu--nojs {
+  @include vp-767 {
+    & .main-header__logo {
+      position: static;
+      align-self: start;
+      fill: $color-base-black;
+    }
+
+    & .navigation__toggle {
+      display: none;
+    }
+
+    & .navigation {
+      display: block;
+      min-height: auto;
+      padding: 0;
+    }
+
+    & .navigation__list {
+      gap: 8px;
+    }
+
+    & .navigation__link {
+      font-size: 14px;
+      line-height: 17px;
+      color: $color-base-white;
+    }
+  }
+}

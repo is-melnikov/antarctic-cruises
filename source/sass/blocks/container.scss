@@ -1,0 +1,36 @@
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+
+  &--main-header {
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    align-items: center;
+    padding: 35px 50px;
+
+    @include vp-1150 {
+      grid-template-columns: 1fr 66%;
+    }
+
+    @include vp-1023 {
+      grid-template-columns: 1fr 74%;
+      padding: 35px 45px;
+    }
+
+    @include vp-767 {
+      padding: 20px 15px 30px;
+    }
+  }
+
+  &--main-block {
+    padding: 213px 145px 100px;
+
+    @include vp-1023 {
+      padding: 158px 45px 70px;
+    }
+
+    @include vp-767 {
+      padding: 66px 15px 0;
+    }
+  }
+}
