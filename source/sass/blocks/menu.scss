@@ -106,6 +106,10 @@
         transform: rotate(-45deg);
       }
     }
+
+    & .navigation__link {
+      color: $color-base-black;
+    }
   }
 }
 

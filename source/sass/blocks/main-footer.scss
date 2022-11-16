@@ -1,0 +1,16 @@
+.main-footer {
+  background-color: $color-base-black;
+}
+
+.main-footer__logo {
+  display: flex;
+}
+
+.main-footer__navigation {
+  justify-self: start;
+
+  & .navigation__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
