@@ -677,6 +677,10 @@ button,
   gap: 88px;
 }
 
+.container--advantages {
+  padding: 120px 50px;
+}
+
 .container--main-footer {
   display: -ms-grid;
   display: grid;
@@ -735,10 +739,6 @@ button,
 
 .promo-block__title {
   margin: 0 0 40px;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 42px;
-  color: #011c40;
 }
 
 .promo-block__title br {
@@ -761,6 +761,50 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.advantages {
+  background-color: #e3ecf6;
+  background-image: -webkit-image-set(url("../img/advantages-bg-desktop.jpg") 1x, url("../img/advantages-bg-desktop@2x.webp") 2x, url("../img/advantages-bg-desktop.jpg") 1x, url("../img/advantages-bg-desktop.jpg") 2x);
+  background-image: image-set("../img/advantages-bg-desktop.jpg" 1x, "../img/advantages-bg-desktop@2x.webp" 2x, "../img/advantages-bg-desktop.jpg" 1x, "../img/advantages-bg-desktop.jpg" 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages__title {
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.advantages__item {
+  padding: 30px;
+  background-color: #f9fbfd;
+  color: #011c40;
+}
+
+.advantages__item h3 {
+  margin: 0 0 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.advantages__item p {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.advantages__icon {
+  margin: 0 0 25px;
 }
 
 .main-footer {
@@ -790,6 +834,13 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 27px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #011c40;
 }
 
 /* @mixin hover-focus {
@@ -861,6 +912,10 @@ button,
     gap: 25px;
   }
 
+  .container--advantages {
+    padding: 100px 45px;
+  }
+
   .container--main-footer {
     -ms-grid-columns: 38px 1fr 87px;
     grid-template-columns: 38px 1fr 87px;
@@ -909,6 +964,40 @@ button,
     display: block;
   }
 
+  .advantages {
+    min-height: 638px;
+    background-image: -webkit-image-set(url("../img/advantages-bg-tablet.webp") 1x, url("../img/advantages-bg-tablet@2x.webp") 2x, url("../img/advantages-bg-tablet.jpg") 1x, url("../img/advantages-bg-tablet.jpg") 2x);
+    background-image: image-set("../img/advantages-bg-tablet.webp" 1x, "../img/advantages-bg-tablet@2x.webp" 2x, "../img/advantages-bg-tablet.jpg" 1x, "../img/advantages-bg-tablet.jpg" 2x);
+  }
+
+  .advantages__list {
+    grid-template-columns: repeat(auto-fit, minmax(206px, 1fr));
+    gap: 30px;
+  }
+
+  .advantages__item {
+    padding: 26px 20px 5px;
+  }
+
+  .advantages__icon {
+    margin: 0 0 24px;
+  }
+
+  .advantages__icon--ship {
+    width: 21px;
+    height: 26px;
+  }
+
+  .advantages__icon--double-tick {
+    width: 27px;
+    height: 26px;
+  }
+
+  .advantages__icon--boat {
+    width: 36px;
+    height: 26px;
+  }
+
   .social__list {
     gap: 22px;
   }
@@ -920,6 +1009,11 @@ button,
 
   .social__icon--ok {
     width: 10px;
+  }
+
+  .title {
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 
@@ -942,6 +1036,10 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 50px;
+  }
+
+  .container--advantages {
+    padding: 65px 15px;
   }
 
   .container--main-footer {
@@ -1128,5 +1226,29 @@ button,
 
   .promo-block__description {
     margin: 0;
+  }
+
+  .advantages {
+    min-height: 500px;
+    background-image: -webkit-image-set(url("../img/advantages-bg-mobile.webp") 1x, url("../img/advantages-bg-mobile@2x.webp") 2x, url("../img/advantages-bg-mobile.jpg") 1x, url("../img/advantages-bg-mobile.jpg") 2x);
+    background-image: image-set("../img/advantages-bg-mobile.webp" 1x, "../img/advantages-bg-mobile@2x.webp" 2x, "../img/advantages-bg-mobile.jpg" 1x, "../img/advantages-bg-mobile.jpg" 2x);
+  }
+
+  .advantages__title {
+    margin: 0 0 40px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .advantages__item {
+    padding: 25px 20px 5px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
