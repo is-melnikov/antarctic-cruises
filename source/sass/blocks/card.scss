@@ -1,0 +1,155 @@
+.card {
+  &:hover .card__wrapper {
+    display: none;
+  }
+
+  &:focus-within .card__wrapper {
+    display: none;
+  }
+}
+
+.card__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 386px;
+  background-color: #9dc1eb;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--astoria {
+    background-image: image-set(
+        "../img/astoria.webp" 1x,
+        "../img/astoria@2x.webp" 2x,
+        "../img/astoria.jpg" 1x,
+        "../img/astoria@2x.jpg" 2x
+        );
+    background-position: -114px 0;
+  }
+
+  &--eline {
+    background-image: image-set(
+      "../img/eline.webp" 1x,
+      "../img/eline@2x.webp" 2x,
+      "../img/eline.jpg" 1x,
+      "../img/eline@2x.jpg" 2x
+      );
+  }
+
+  &--atlantis {
+    background-image: image-set(
+      "../img/atlantis.webp" 1x,
+      "../img/atlantis@2x.webp" 2x,
+      "../img/atlantis.jpg" 1x,
+      "../img/atlantis@2x.jpg" 2x
+      );
+    background-position: -114px 0;
+  }
+
+  &--odissei {
+    background-image: image-set(
+      "../img/odissei.webp" 1x,
+      "../img/odissei@2x.webp" 2x,
+      "../img/odissei.jpg" 1x,
+      "../img/odissei@2x.jpg" 2x
+      );
+    background-position: -114px 0;
+  }
+
+  &--olimpia {
+    background-image: image-set(
+      "../img/olimpia.webp" 1x,
+      "../img/olimpia@2x.webp" 2x,
+      "../img/olimpia.jpg" 1x,
+      "../img/olimpia@2x.jpg" 2x
+      );
+    background-position: -114px 0;
+  }
+
+  &--aurora {
+    background-image: image-set(
+      "../img/aurora.webp" 1x,
+      "../img/aurora@2x.webp" 2x,
+      "../img/aurora.jpg" 1x,
+      "../img/aurora@2x.jpg" 2x
+      );
+    background-position: -114px 0;
+  }
+
+  &--leonor {
+    background-image: image-set(
+      "../img/leonor.webp" 1x,
+      "../img/leonor@2x.webp" 2x,
+      "../img/leonor.jpg" 1x,
+      "../img/leonor@2x.jpg" 2x
+      );
+    background-position: -114px 0;
+  }
+
+  &--minion {
+    background-image: image-set(
+      "../img/minion.webp" 1x,
+      "../img/minion@2x.webp" 2x,
+      "../img/minion.jpg" 1x,
+      "../img/minion@2x.jpg" 2x
+      );
+    background-position: -114px 0;
+  }
+}
+
+.card__title {
+  margin: 0;
+  padding: 343px 30px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.card__content {
+  width: 100%;
+  height: 386px;
+  padding: 35px 25px;
+  background-color: $color-base-black;
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+
+  & .card__title {
+    padding: 0;
+  }
+
+  & .card__description {
+    margin: 12px 0 20px;
+  }
+
+  & .card__designation {
+    margin: 0 0 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  & .card__value {
+    margin: 0 0 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #d8d8d9;
+  }
+
+  & .card__button {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 9px 10px 10px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: $color-base-black;
+    background-color: $color-base-white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}

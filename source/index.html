@@ -29,22 +29,24 @@
             <span class="navigation__toggle-bar"></span>
             <span class="visually-hidden">Открыть навигацию сайта.</span>
           </button>
-          <nav class="main-heder__navigation navigation">
-            <ul class="navigation__list reset-list">
-              <li class="navigation__item">
-                <a class="navigation__link" href="#advantages">Преимущества </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#cruises">Направления</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#cruises">Ближайшие круизы</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="overlay">
+            <nav class="main-heder__navigation navigation">
+              <ul class="navigation__list reset-list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#advantages">Преимущества </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#cruises">Направления</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#cruises">Ближайшие круизы</a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
         <section class="main-block">
           <div class="container container--main-block">
@@ -57,7 +59,7 @@
         <section class="promo-block">
           <div class="container container--promo-block">
             <div class="promo-block__text-wrapper">
-              <h2 class="promo-block__title title">Путешествие<br> на&nbsp;край Земли</h2>
+              <h2 class="promo-block__title title title--promo-block">Путешествие<br> на&nbsp;край Земли</h2>
               <p class="promo-block__description">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
             </div>
             <div class="promo-block__wrapper">
@@ -97,161 +99,163 @@
           </div>
         </section>
         <section class="cruises" id="cruises">
-          <h2 class="cruises__title title">Ближайшие круизы</h2>
-          <ul class="cruises__list reset-list">
-            <li class="cruises__item card">
-              <div class="card__wrapper">
-                <h3 class="card__title">Круиз "Астория"</h3>
-              </div>
-              <div class="card__content">
-                <span class="card__title">Круиз "Астория"</span>
-                <dl class="card__description">
-                  <dt class="card__designation">Маршрут</dt>
-                  <dd class="card__value">Аргентина - Фолклендские острова - Антарктида</dd>
-                  <dt class="card__designation">Порт(ы) отправления</dt>
-                  <dd class="card__value">Ушуайя</dd>
-                  <dt class="card__designation">Продолжительность</dt>
-                  <dd class="card__value">11 дней</dd>
-                  <dt class="card__designation">Цена</dt>
-                  <dd class="card__value">от 11500 $</dd>
-                </dl>
-                <a class="card__button" href="#">Забронировать</a>
-              </div>
-            </li>
-            <li class="cruises__item card">
-              <div class="card__wrapper">
-                <h3 class="card__title">Круиз “Элайн”</h3>
-              </div>
-              <div class="card__content">
-                <span class="card__title">Круиз “Элайн”</span>
-                <dl class="card__description">
-                  <dt class="card__designation">Маршрут</dt>
-                  <dd class="card__value">Аргентина - Фолклендские острова - Антарктида - Чили</dd>
-                  <dt class="card__designation">Порт отправления</dt>
-                  <dd class="card__value">Буэнос-Айрес</dd>
-                  <dt class="card__designation">Продолжительность</dt>
-                  <dd class="card__value">20 дней</dd>
-                  <dt class="card__designation">Цена</dt>
-                  <dd class="card__value">от 14500 $</dd>
-                </dl>
-                <a class="card__button" href="#">Забронировать</a>
-              </div>
-            </li>
-            <li class="cruises__item card">
-              <div class="card__wrapper">
-                <h3 class="card__title">Круиз “Атлантис”</h3>
-              </div>
-              <div class="card__content">
-                <span class="card__title">Круиз “Атлантис”</span>
-                <dl class="card__description">
-                  <dt class="card__designation">Маршрут</dt>
-                  <dd class="card__value">Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
-                  <dt class="card__designation">Порт(ы) отправления</dt>
-                  <dd class="card__value">Ушуайя</dd>
-                  <dt class="card__designation">Продолжительность</dt>
-                  <dd class="card__value">15 дней</dd>
-                  <dt class="card__designation">Цена</dt>
-                  <dd class="card__value">от 14500 $</dd>
-                </dl>
-                <a class="card__button" href="#">Забронировать</a>
-              </div>
-            </li>
-            <li class="cruises__item card">
-              <div class="card__wrapper">
-                <h3 class="card__title">Круиз “Одиссей”</h3>
-              </div>
-              <div class="card__content">
-                <span class="card__title">Круиз “Одиссей”</span>
-                <dl class="card__description">
-                  <dt class="card__designation">Маршрут</dt>
-                  <dd class="card__value">Чили - Антарктида</dd>
-                  <dt class="card__designation">Порт(ы) отправления</dt>
-                  <dd class="card__value">Пунта-Аренас</dd>
-                  <dt class="card__designation">Продолжительность</dt>
-                  <dd class="card__value">13 дней</dd>
-                  <dt class="card__designation">Цена</dt>
-                  <dd class="card__value">от 9700 $</dd>
-                </dl>
-                <a class="card__button" href="#">Забронировать</a>
-              </div>
-            </li>
-            <li class="cruises__item card">
-              <div class="card__wrapper">
-                <h3 class="card__title">Круиз “Олимпия”</h3>
-              </div>
-              <div class="card__content">
-                <span class="card__title">Круиз “Олимпия”</span>
-                <dl class="card__description">
-                  <dt class="card__designation">Маршрут</dt>
-                  <dd class="card__value">Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
-                  <dt class="card__designation">Порт(ы) отправления</dt>
-                  <dd class="card__value">Ушуайя</dd>
-                  <dt class="card__designation">Продолжительность</dt>
-                  <dd class="card__value">21 день</dd>
-                  <dt class="card__designation">Цена</dt>
-                  <dd class="card__value">от 18600 $</dd>
-                </dl>
-                <a class="card__button" href="#">Забронировать</a>
-              </div>
-            </li>
-            <li class="cruises__item card">
-              <div class="card__wrapper">
-                <h3 class="card__title">Круиз “Аврора”</h3>
-              </div>
-              <div class="card__content">
-                <span class="card__title">Круиз “Аврора”</span>
-                <dl class="card__description">
-                  <dt class="card__designation">Маршрут</dt>
-                  <dd class="card__value">Аргентина - Антарктида - Чили</dd>
-                  <dt class="card__designation">Порт(ы) отправления</dt>
-                  <dd class="card__value">Ушуайя</dd>
-                  <dt class="card__designation">Продолжительность</dt>
-                  <dd class="card__value">14 дней</dd>
-                  <dt class="card__designation">Цена</dt>
-                  <dd class="card__value">от 11700 $</dd>
-                </dl>
-                <a class="card__button" href="#">Забронировать</a>
-              </div>
-            </li>
-            <li class="cruises__item card">
-              <div class="card__wrapper">
-                <h3 class="card__title">Круиз “Леонор”</h3>
-              </div>
-              <div class="card__content">
-                <span class="card__title">Круиз “Леонор”</span>
-                <dl class="card__description">
-                  <dt class="card__designation">Маршрут</dt>
-                  <dd class="card__value">Чили - Южная Георгия - Антарктида - Аргентина</dd>
-                  <dt class="card__designation">Порт(ы) отправления</dt>
-                  <dd class="card__value">Пунта-Аренас</dd>
-                  <dt class="card__designation">Продолжительность</dt>
-                  <dd class="card__value">17 дней</dd>
-                  <dt class="card__designation">Цена</dt>
-                  <dd class="card__value">от 12500 $</dd>
-                </dl>
-                <a class="card__button" href="#">Забронировать</a>
-              </div>
-            </li>
-            <li class="cruises__item card">
-              <div class="card__wrapper">
-                <h3 class="card__title">Круиз “Минион - 1”</h3>
-              </div>
-              <div class="card__content">
-                <span class="card__title">Круиз “Минион - 1”</span>
-                <dl class="card__description">
-                  <dt class="card__designation">Маршрут</dt>
-                  <dd class="card__value">Аргентина - Антарктида</dd>
-                  <dt class="card__designation">Порт(ы) отправления</dt>
-                  <dd class="card__value">Ушуайя</dd>
-                  <dt class="card__designation">Продолжительность</dt>
-                  <dd class="card__value">11 дней</dd>
-                  <dt class="card__designation">Цена</dt>
-                  <dd class="card__value">от 12300 $</dd>
-                </dl>
-                <a class="card__button" href="#">Забронировать</a>
-              </div>
-            </li>
-          </ul>
+          <div class="container container--cruises">
+            <h2 class="cruises__title title">Ближайшие круизы</h2>
+            <ul class="cruises__list reset-list">
+              <li class="cruises__item card card--astoria">
+                <div class="card__wrapper card__wrapper--astoria">
+                  <h3 class="card__title">Круиз "Астория"</h3>
+                </div>
+                <div class="card__content">
+                  <span class="card__title">Круиз "Астория"</span>
+                  <dl class="card__description">
+                    <dt class="card__designation">Маршрут</dt>
+                    <dd class="card__value">Аргентина - Фолклендские острова - Антарктида</dd>
+                    <dt class="card__designation">Порт(ы) отправления</dt>
+                    <dd class="card__value">Ушуайя</dd>
+                    <dt class="card__designation">Продолжительность</dt>
+                    <dd class="card__value">11 дней</dd>
+                    <dt class="card__designation">Цена</dt>
+                    <dd class="card__value">от 11500 $</dd>
+                  </dl>
+                  <a class="card__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruises__item card card--eline">
+                <div class="card__wrapper card__wrapper--eline">
+                  <h3 class="card__title">Круиз “Элайн”</h3>
+                </div>
+                <div class="card__content">
+                  <span class="card__title">Круиз “Элайн”</span>
+                  <dl class="card__description">
+                    <dt class="card__designation">Маршрут</dt>
+                    <dd class="card__value">Аргентина - Фолклендские острова - Антарктида - Чили</dd>
+                    <dt class="card__designation">Порт отправления</dt>
+                    <dd class="card__value">Буэнос-Айрес</dd>
+                    <dt class="card__designation">Продолжительность</dt>
+                    <dd class="card__value">20 дней</dd>
+                    <dt class="card__designation">Цена</dt>
+                    <dd class="card__value">от 14500 $</dd>
+                  </dl>
+                  <a class="card__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruises__item card card--atlantis">
+                <div class="card__wrapper card__wrapper--atlantis">
+                  <h3 class="card__title">Круиз “Атлантис”</h3>
+                </div>
+                <div class="card__content">
+                  <span class="card__title">Круиз “Атлантис”</span>
+                  <dl class="card__description">
+                    <dt class="card__designation">Маршрут</dt>
+                    <dd class="card__value">Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
+                    <dt class="card__designation">Порт(ы) отправления</dt>
+                    <dd class="card__value">Ушуайя</dd>
+                    <dt class="card__designation">Продолжительность</dt>
+                    <dd class="card__value">15 дней</dd>
+                    <dt class="card__designation">Цена</dt>
+                    <dd class="card__value">от 14500 $</dd>
+                  </dl>
+                  <a class="card__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruises__item card card--odissei">
+                <div class="card__wrapper card__wrapper--odissei">
+                  <h3 class="card__title">Круиз “Одиссей”</h3>
+                </div>
+                <div class="card__content">
+                  <span class="card__title">Круиз “Одиссей”</span>
+                  <dl class="card__description">
+                    <dt class="card__designation">Маршрут</dt>
+                    <dd class="card__value">Чили - Антарктида</dd>
+                    <dt class="card__designation">Порт(ы) отправления</dt>
+                    <dd class="card__value">Пунта-Аренас</dd>
+                    <dt class="card__designation">Продолжительность</dt>
+                    <dd class="card__value">13 дней</dd>
+                    <dt class="card__designation">Цена</dt>
+                    <dd class="card__value">от 9700 $</dd>
+                  </dl>
+                  <a class="card__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruises__item card card--olimpia">
+                <div class="card__wrapper card__wrapper--olimpia">
+                  <h3 class="card__title">Круиз “Олимпия”</h3>
+                </div>
+                <div class="card__content">
+                  <span class="card__title">Круиз “Олимпия”</span>
+                  <dl class="card__description">
+                    <dt class="card__designation">Маршрут</dt>
+                    <dd class="card__value">Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
+                    <dt class="card__designation">Порт(ы) отправления</dt>
+                    <dd class="card__value">Ушуайя</dd>
+                    <dt class="card__designation">Продолжительность</dt>
+                    <dd class="card__value">21 день</dd>
+                    <dt class="card__designation">Цена</dt>
+                    <dd class="card__value">от 18600 $</dd>
+                  </dl>
+                  <a class="card__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruises__item card card--aurora">
+                <div class="card__wrapper card__wrapper--aurora">
+                  <h3 class="card__title">Круиз “Аврора”</h3>
+                </div>
+                <div class="card__content">
+                  <span class="card__title">Круиз “Аврора”</span>
+                  <dl class="card__description">
+                    <dt class="card__designation">Маршрут</dt>
+                    <dd class="card__value">Аргентина - Антарктида - Чили</dd>
+                    <dt class="card__designation">Порт(ы) отправления</dt>
+                    <dd class="card__value">Ушуайя</dd>
+                    <dt class="card__designation">Продолжительность</dt>
+                    <dd class="card__value">14 дней</dd>
+                    <dt class="card__designation">Цена</dt>
+                    <dd class="card__value">от 11700 $</dd>
+                  </dl>
+                  <a class="card__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruises__item card card--leonor">
+                <div class="card__wrapper card__wrapper--leonor">
+                  <h3 class="card__title">Круиз “Леонор”</h3>
+                </div>
+                <div class="card__content">
+                  <span class="card__title">Круиз “Леонор”</span>
+                  <dl class="card__description">
+                    <dt class="card__designation">Маршрут</dt>
+                    <dd class="card__value">Чили - Южная Георгия - Антарктида - Аргентина</dd>
+                    <dt class="card__designation">Порт(ы) отправления</dt>
+                    <dd class="card__value">Пунта-Аренас</dd>
+                    <dt class="card__designation">Продолжительность</dt>
+                    <dd class="card__value">17 дней</dd>
+                    <dt class="card__designation">Цена</dt>
+                    <dd class="card__value">от 12500 $</dd>
+                  </dl>
+                  <a class="card__button" href="#">Забронировать</a>
+                </div>
+              </li>
+              <li class="cruises__item card card--minion">
+                <div class="card__wrapper card__wrapper--minion">
+                  <h3 class="card__title">Круиз “Минион - 1”</h3>
+                </div>
+                <div class="card__content">
+                  <span class="card__title">Круиз “Минион - 1”</span>
+                  <dl class="card__description">
+                    <dt class="card__designation">Маршрут</dt>
+                    <dd class="card__value">Аргентина - Антарктида</dd>
+                    <dt class="card__designation">Порт(ы) отправления</dt>
+                    <dd class="card__value">Ушуайя</dd>
+                    <dt class="card__designation">Продолжительность</dt>
+                    <dd class="card__value">11 дней</dd>
+                    <dt class="card__designation">Цена</dt>
+                    <dd class="card__value">от 12300 $</dd>
+                  </dl>
+                  <a class="card__button" href="#">Забронировать</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="booking">
           <div class="container container--booking">

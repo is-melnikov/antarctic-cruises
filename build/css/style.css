@@ -429,6 +429,7 @@ body {
   padding: 0;
   min-height: 100vh;
   min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -560,30 +561,6 @@ button,
   appearance: none;
 }
 
-.wrapper {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.wrapper .header,
-.wrapper .footer {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
-.wrapper main {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
 .rouble {
   font-family: "Rouble", "Arial", sans-serif;
   /* stylelint-disable */
@@ -681,6 +658,10 @@ button,
   padding: 120px 50px;
 }
 
+.container--cruises {
+  padding: 95px 50px 120px;
+}
+
 .container--main-footer {
   display: -ms-grid;
   display: grid;
@@ -765,8 +746,8 @@ button,
 
 .advantages {
   background-color: #e3ecf6;
-  background-image: -webkit-image-set(url("../img/advantages-bg-desktop.jpg") 1x, url("../img/advantages-bg-desktop@2x.webp") 2x, url("../img/advantages-bg-desktop.jpg") 1x, url("../img/advantages-bg-desktop.jpg") 2x);
-  background-image: image-set("../img/advantages-bg-desktop.jpg" 1x, "../img/advantages-bg-desktop@2x.webp" 2x, "../img/advantages-bg-desktop.jpg" 1x, "../img/advantages-bg-desktop.jpg" 2x);
+  background-image: -webkit-image-set(url("../img/advantages-bg-desktop.webp") 1x, url("../img/advantages-bg-desktop@2x.webp") 2x, url("../img/advantages-bg-desktop.jpg") 1x, url("../img/advantages-bg-desktop.jpg") 2x);
+  background-image: image-set("../img/advantages-bg-desktop.webp" 1x, "../img/advantages-bg-desktop@2x.webp" 2x, "../img/advantages-bg-desktop.jpg" 1x, "../img/advantages-bg-desktop.jpg" 2x);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -807,6 +788,145 @@ button,
   margin: 0 0 25px;
 }
 
+.cruises__title {
+  margin: 0 0 60px;
+}
+
+.cruises__list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.cruises__item {
+  position: relative;
+  height: 386px;
+}
+
+.card:hover .card__wrapper {
+  display: none;
+}
+
+.card:focus-within .card__wrapper {
+  display: none;
+}
+
+.card__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 386px;
+  background-color: #9dc1eb;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__wrapper--astoria {
+  background-image: -webkit-image-set(url("../img/astoria.webp") 1x, url("../img/astoria@2x.webp") 2x, url("../img/astoria.jpg") 1x, url("../img/astoria@2x.jpg") 2x);
+  background-image: image-set("../img/astoria.webp" 1x, "../img/astoria@2x.webp" 2x, "../img/astoria.jpg" 1x, "../img/astoria@2x.jpg" 2x);
+  background-position: -114px 0;
+}
+
+.card__wrapper--eline {
+  background-image: -webkit-image-set(url("../img/eline.webp") 1x, url("../img/eline@2x.webp") 2x, url("../img/eline.jpg") 1x, url("../img/eline@2x.jpg") 2x);
+  background-image: image-set("../img/eline.webp" 1x, "../img/eline@2x.webp" 2x, "../img/eline.jpg" 1x, "../img/eline@2x.jpg" 2x);
+}
+
+.card__wrapper--atlantis {
+  background-image: -webkit-image-set(url("../img/atlantis.webp") 1x, url("../img/atlantis@2x.webp") 2x, url("../img/atlantis.jpg") 1x, url("../img/atlantis@2x.jpg") 2x);
+  background-image: image-set("../img/atlantis.webp" 1x, "../img/atlantis@2x.webp" 2x, "../img/atlantis.jpg" 1x, "../img/atlantis@2x.jpg" 2x);
+  background-position: -114px 0;
+}
+
+.card__wrapper--odissei {
+  background-image: -webkit-image-set(url("../img/odissei.webp") 1x, url("../img/odissei@2x.webp") 2x, url("../img/odissei.jpg") 1x, url("../img/odissei@2x.jpg") 2x);
+  background-image: image-set("../img/odissei.webp" 1x, "../img/odissei@2x.webp" 2x, "../img/odissei.jpg" 1x, "../img/odissei@2x.jpg" 2x);
+  background-position: -114px 0;
+}
+
+.card__wrapper--olimpia {
+  background-image: -webkit-image-set(url("../img/olimpia.webp") 1x, url("../img/olimpia@2x.webp") 2x, url("../img/olimpia.jpg") 1x, url("../img/olimpia@2x.jpg") 2x);
+  background-image: image-set("../img/olimpia.webp" 1x, "../img/olimpia@2x.webp" 2x, "../img/olimpia.jpg" 1x, "../img/olimpia@2x.jpg" 2x);
+  background-position: -114px 0;
+}
+
+.card__wrapper--aurora {
+  background-image: -webkit-image-set(url("../img/aurora.webp") 1x, url("../img/aurora@2x.webp") 2x, url("../img/aurora.jpg") 1x, url("../img/aurora@2x.jpg") 2x);
+  background-image: image-set("../img/aurora.webp" 1x, "../img/aurora@2x.webp" 2x, "../img/aurora.jpg" 1x, "../img/aurora@2x.jpg" 2x);
+  background-position: -114px 0;
+}
+
+.card__wrapper--leonor {
+  background-image: -webkit-image-set(url("../img/leonor.webp") 1x, url("../img/leonor@2x.webp") 2x, url("../img/leonor.jpg") 1x, url("../img/leonor@2x.jpg") 2x);
+  background-image: image-set("../img/leonor.webp" 1x, "../img/leonor@2x.webp" 2x, "../img/leonor.jpg" 1x, "../img/leonor@2x.jpg" 2x);
+  background-position: -114px 0;
+}
+
+.card__wrapper--minion {
+  background-image: -webkit-image-set(url("../img/minion.webp") 1x, url("../img/minion@2x.webp") 2x, url("../img/minion.jpg") 1x, url("../img/minion@2x.jpg") 2x);
+  background-image: image-set("../img/minion.webp" 1x, "../img/minion@2x.webp" 2x, "../img/minion.jpg" 1x, "../img/minion@2x.jpg" 2x);
+  background-position: -114px 0;
+}
+
+.card__title {
+  margin: 0;
+  padding: 343px 30px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.card__content {
+  width: 100%;
+  height: 386px;
+  padding: 35px 25px;
+  background-color: #011c40;
+  -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+}
+
+.card__content .card__title {
+  padding: 0;
+}
+
+.card__content .card__description {
+  margin: 12px 0 20px;
+}
+
+.card__content .card__designation {
+  margin: 0 0 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card__content .card__value {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #d8d8d9;
+}
+
+.card__content .card__button {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 9px 10px 10px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #011c40;
+  background-color: #f9fbfd;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .main-footer {
   background-color: #011c40;
 }
@@ -841,6 +961,31 @@ button,
   font-size: 28px;
   line-height: 42px;
   color: #011c40;
+  text-align: center;
+}
+
+.wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper .header,
+.wrapper .footer {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.wrapper main {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 /* @mixin hover-focus {
@@ -914,6 +1059,10 @@ button,
 
   .container--advantages {
     padding: 100px 45px;
+  }
+
+  .container--cruises {
+    padding: 100px 60px;
   }
 
   .container--main-footer {
@@ -1013,12 +1162,18 @@ button,
 
   .title {
     font-size: 26px;
+    line-height: 39px;
+  }
+
+  .title--promo-block {
+    text-align: start;
     line-height: 36px;
   }
 }
 
 @media (max-width: 767px) {
   .main-header {
+    position: relative;
     min-height: 500px;
     background-image: -webkit-image-set(url("../img/main-bg-mobile.webp") 1x, url("../img/main-bg-mobile@2x.webp") 2x, url("../img/main-bg-mobile.jpg") 1x, url("../img/main-bg-mobile.jpg") 2x);
     background-image: image-set("../img/main-bg-mobile.webp" 1x, "../img/main-bg-mobile@2x.webp" 2x, "../img/main-bg-mobile.jpg" 1x, "../img/main-bg-mobile.jpg" 2x);
@@ -1040,6 +1195,10 @@ button,
 
   .container--advantages {
     padding: 65px 15px;
+  }
+
+  .container--cruises {
+    padding: 65px 25px;
   }
 
   .container--main-footer {
@@ -1158,6 +1317,15 @@ button,
     color: #011c40;
   }
 
+  .menu--opened .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 42, 102, 0.5);
+  }
+
   .menu--nojs .main-header__logo {
     position: static;
     -ms-flex-item-align: start;
@@ -1247,8 +1415,23 @@ button,
     padding: 25px 20px 5px;
   }
 
+  .cruises__title {
+    margin: 0 0 40px;
+  }
+
+  .cruises__list {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 380px));
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .title {
     font-size: 24px;
+    line-height: 36px;
+  }
+
+  .title--promo-block {
     line-height: 34px;
   }
 }
