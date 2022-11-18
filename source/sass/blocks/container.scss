@@ -74,6 +74,23 @@
     }
   }
 
+  &--booking {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 113px;
+
+    @include vp-1023 {
+      grid-template-columns: 1fr;
+      padding: 100px 60px;
+    }
+
+    @include vp-767 {
+      padding: 65px 15px;
+    }
+  }
+
   &--main-footer {
     display: grid;
     grid-template-columns: 70px 1fr 106px;

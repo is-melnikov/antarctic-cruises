@@ -8,6 +8,16 @@
   }
 }
 
+.social__link {
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .social__icon {
   @include vp-1023 {
     width: 16px;
