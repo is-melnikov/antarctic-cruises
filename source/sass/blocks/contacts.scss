@@ -1,0 +1,69 @@
+.contacts__map {
+  width: 560px;
+  height: 306px;
+  background-image: image-set(
+      "../img/map-desktop.webp" 1x,
+      "../img/map-desktop@2x.webp" 2x,
+      "../img/map-desktop.jpg" 1x,
+      "../img/map-desktop@2x.jpg" 2x
+      );
+
+  @include vp-1023 {
+    width: 324px;
+    height: 335px;
+    background-image: image-set(
+      "../img/map-tablet.webp" 1x,
+      "../img/map-tablet@2x.webp" 2x,
+      "../img/map-tablet.jpg" 1x,
+      "../img/map-tablet@2x.jpg" 2x
+      );
+  }
+
+  @include vp-767 {
+    order: 1;
+    width: 290px;
+    height: 316px;
+    background-image: image-set(
+      "../img/map-mobile.webp" 1x,
+      "../img/map-mobile@2x.webp" 2x,
+      "../img/map-mobile.jpg" 1x,
+      "../img/map-mobile@2x.jpg" 2x
+      );
+  }
+}
+
+.contacts__description {
+  margin: 0 0 45px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-base-black;
+
+  @include vp-1023 {
+    margin: 0 0 40px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include vp-1023 {
+    gap: 33px;
+  }
+}
+
+.contacts__item {
+  display: flex;
+}
+
+.contacts__icon {
+  align-self: start;
+  flex-shrink: 0;
+  margin: 0 10px 0 0;
+}
+
+.contacts__link {
+  line-height: 24px;
+}

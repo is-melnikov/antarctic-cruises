@@ -91,6 +91,27 @@
     }
   }
 
+  &--contacts {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 100px;
+    padding: 120px 50px;
+
+    @include vp-1023 {
+      grid-template-columns: auto 1fr;
+      gap: 30px;
+      padding: 100px 45px;
+    }
+
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      gap: 43px;
+      padding: 65px 15px;
+    }
+  }
+
   &--main-footer {
     display: grid;
     grid-template-columns: 70px 1fr 106px;
