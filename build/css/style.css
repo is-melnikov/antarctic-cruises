@@ -1097,6 +1097,7 @@ button,
 
 .form label:last-of-type input[type=checkbox]:focus-within + span::before {
   outline: 1px solid #011c40;
+  outline-offset: -2px;
 }
 
 .form label:last-of-type input[type=checkbox]:hover + span::before {
@@ -1154,6 +1155,14 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contacts__item:hover {
+  opacity: 0.5;
+}
+
+.contacts__item:active {
+  opacity: 0.3;
 }
 
 .contacts__icon {

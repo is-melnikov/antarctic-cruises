@@ -56,6 +56,14 @@
 
 .contacts__item {
   display: flex;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__icon {
