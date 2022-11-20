@@ -25,12 +25,12 @@
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <button class="navigation__toggle" type="button">
-            <span class="navigation__toggle-bar"></span>
+          <button class="menu__toggle" type="button">
+            <span class="menu__toggle-bar"></span>
             <span class="visually-hidden">Открыть навигацию сайта.</span>
           </button>
           <div class="overlay">
-            <nav class="main-heder__navigation navigation">
+            <nav class="navigation">
               <ul class="navigation__list reset-list">
                 <li class="navigation__item">
                   <a class="navigation__link" href="#advantages">Преимущества </a>
@@ -50,8 +50,8 @@
         </div>
         <section class="main-block">
           <div class="container container--main-block">
-            <h1 class="main-block__title">Круизы в Антарктику</h1>
-            <p class="main-block__description">Волшебный мир айсбергов и пингвинов</p>
+            <h1 class="main-block__title">Круизы в&nbsp;Антарктику</h1>
+            <p class="main-block__description">Волшебный мир айсбергов и&nbsp;пингвинов</p>
           </div>
         </section>
       </header>
@@ -261,21 +261,21 @@
           <div class="container container--booking">
             <div class="booking__text">
               <h2 class="booking__title">Раннее бронирование</h2>
-              <p class="booking__description">Забронируйте тур за&nbsp;3-6 месяцев
+              <p class="booking__description">Забронируйте тур за&nbsp;3-6 месяцев<br>
                 до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
             </div>
             <form class="booking__form form" action="https://echo.htmlacademy.ru" method="post">
               <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
-              <label for="name"></label>
+              <label class="visually-hidden" for="name">Имя</label>
               <input type="text" name="name" id="name" placeholder="Имя" required>
-              <label for="phone"></label>
+              <label class="visually-hidden" for="phone">Телефон</label>
               <input type="tel" name="phone" id="phone" placeholder="Телефон" data-js="phone-number" minlength="11" maxlength="11" required>
-              <label for=""></label>
+              <label class="visually-hidden" for="email">Email</label>
               <input type="email" name="email" id="email" placeholder="Email">
               <label>
                 <input class="visually-hidden" type="checkbox" name="personal-information-agree" value="agree" required checked>
                 <span></span>
-                Я согласен на обработку моих персональных данных
+                Я&nbsp;согласен на&nbsp;обработку моих персональных данных
               </label>
               <button type="submit">Оставить заявку</button>
             </form>
@@ -284,7 +284,9 @@
         <section class="contacts" id="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="container container--contacts">
-            <div class="contacts__map"></div>
+            <div class="contacts__map-wrapper">
+              <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858715841602!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1668935658194!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
             <div class="contacts__wrapper">
               <p class="contacts__description">У&nbsp;вас ещё остались вопросы или сомнения?
                 Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
@@ -308,7 +310,7 @@
       </main>
       <footer class="main-footer">
         <div class="container container--main-footer">
-          <a href="" class="main-footer__logo logo">
+          <a href="#" class="main-footer__logo logo">
             <svg class="logo__icon" width="70" height="38">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>

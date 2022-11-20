@@ -1,4 +1,4 @@
-.contacts__map {
+.contacts__map-wrapper {
   width: 560px;
   height: 306px;
   background-image: image-set(
@@ -32,8 +32,17 @@
   }
 }
 
+.contacts__map {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__wrapper {
+  margin: 75px 0 0;
+}
+
 .contacts__description {
-  margin: 0 0 45px;
+  margin: 0 0 32px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -47,7 +56,7 @@
 .contacts__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 22px;
 
   @include vp-1023 {
     gap: 33px;

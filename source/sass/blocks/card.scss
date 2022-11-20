@@ -14,7 +14,9 @@
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
   height: 386px;
+  padding: 30px 30px 21px;
   background-color: #9dc1eb;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +28,7 @@
         "../img/astoria.jpg" 1x,
         "../img/astoria@2x.jpg" 2x
         );
-    background-position: -114px 0;
+    background-position: -118px 1px;
   }
 
   &--eline {
@@ -45,7 +47,7 @@
       "../img/atlantis.jpg" 1x,
       "../img/atlantis@2x.jpg" 2x
       );
-    background-position: -114px 0;
+    background-position: -123px 0;
   }
 
   &--odissei {
@@ -55,7 +57,7 @@
       "../img/odissei.jpg" 1x,
       "../img/odissei@2x.jpg" 2x
       );
-    background-position: -114px 0;
+    background-position: -117px 1px;
   }
 
   &--olimpia {
@@ -65,7 +67,7 @@
       "../img/olimpia.jpg" 1x,
       "../img/olimpia@2x.jpg" 2x
       );
-    background-position: -114px 0;
+    background-position: -117px 1px;
   }
 
   &--aurora {
@@ -75,7 +77,7 @@
       "../img/aurora.jpg" 1x,
       "../img/aurora@2x.jpg" 2x
       );
-    background-position: -114px 0;
+    background-position: -105px 1px;
   }
 
   &--leonor {
@@ -85,7 +87,7 @@
       "../img/leonor.jpg" 1x,
       "../img/leonor@2x.jpg" 2x
       );
-    background-position: -114px 0;
+    background-position: -147px 1px;
   }
 
   &--minion {
@@ -95,13 +97,12 @@
       "../img/minion.jpg" 1x,
       "../img/minion@2x.jpg" 2x
       );
-    background-position: -114px 0;
+    background-position: -176px 0;
   }
 }
 
 .card__title {
-  margin: 0;
-  padding: 343px 30px 30px;
+  margin: auto 0 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -112,7 +113,8 @@
   flex-direction: column;
   width: 100%;
   height: 386px;
-  padding: 35px 25px;
+  padding: 16px 25px 34px;
+  overflow-y: auto;
   background-color: $color-base-black;
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 

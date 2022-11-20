@@ -31,7 +31,7 @@
 }
 
 .advantages__title {
-  margin: 0 0 60px;
+  margin: 0 0 51px;
   text-align: center;
 
   @include vp-767 {
@@ -55,7 +55,7 @@
 }
 
 .advantages__item {
-  padding: 30px;
+  padding: 30px 30px 26px;
   background-color: $color-base-white;
   color: $color-base-black;
 
@@ -68,7 +68,7 @@
   }
 
   & h3 {
-    margin: 0 0 20px;
+    margin: 0 0 8px;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -82,7 +82,7 @@
 }
 
 .advantages__icon {
-  margin: 0 0 25px;
+  margin: 0 0 12px;
 
   @include vp-1023 {
     margin: 0 0 24px;

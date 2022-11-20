@@ -5,12 +5,15 @@
   color: $color-base-black;
   text-align: center;
 
+  &--promo-block {
+    text-align: start;
+  }
+
   @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
 
     &--promo-block {
-      text-align: start;
       line-height: 36px;
     }
   }

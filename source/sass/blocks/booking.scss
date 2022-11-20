@@ -1,5 +1,6 @@
 .booking {
   min-height: 555px;
+  background-color: #acdbe4;
   background-image: image-set(
         "../img/booking-bg-desktop.webp" 1x,
         "../img/booking-bg-desktop@2x.webp" 2x,
@@ -30,8 +31,12 @@
   }
 }
 
+.booking__text {
+  margin: 163px 0 0;
+}
+
 .booking__title {
-  margin: 0 0 30px;
+  margin: 0 0 8px;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
@@ -73,7 +78,7 @@
 .booking__form {
   width: 403px;
   justify-self: end;
-  padding: 50px;
+  padding: 44px 50px 50px;
 
   @include vp-1023 {
     justify-self: center;

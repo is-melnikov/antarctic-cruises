@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 60%;
     align-items: center;
-    padding: 35px 50px;
+    padding: 32px 50px;
 
     @include vp-1150 {
       grid-template-columns: 1fr 66%;
@@ -23,7 +23,7 @@
   }
 
   &--main-block {
-    padding: 213px 145px 100px;
+    padding: 162px 145px 100px;
 
     @include vp-1023 {
       padding: 158px 45px 70px;
@@ -38,20 +38,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 88px;
+    gap: 38px;
+    padding: 120px 50px 145px;
 
     @include vp-1023 {
       gap: 25px;
+      padding: 100px 45px;
     }
 
     @include vp-767 {
       grid-template-columns: 1fr;
       gap: 50px;
+      padding: 65px 15px 85px;
     }
   }
 
   &--advantages {
-    padding: 120px 50px;
+    padding: 110px 50px 119px;
 
     @include vp-1023 {
       padding: 100px 45px;
@@ -63,7 +66,7 @@
   }
 
   &--cruises {
-    padding: 95px 50px 120px;
+    padding: 84px 65px 122px;
 
     @include vp-1023 {
       padding: 100px 60px;
@@ -77,9 +80,8 @@
   &--booking {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     justify-content: space-between;
-    padding: 50px 113px;
+    padding: 50px 110px 40px;
 
     @include vp-1023 {
       grid-template-columns: 1fr;
@@ -94,7 +96,6 @@
   &--contacts {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: center;
     gap: 100px;
     padding: 120px 50px;
 

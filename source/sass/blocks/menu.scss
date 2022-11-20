@@ -1,10 +1,14 @@
+.menu__toggle {
+  display: none;
+}
+
 .menu--closed {
   @include vp-767 {
     & .navigation {
       display: none;
     }
 
-    & .navigation__toggle {
+    & .menu__toggle {
       position: absolute;
       right: 22px;
       top: 24px;
@@ -18,7 +22,7 @@
       cursor: pointer;
     }
 
-    & .navigation__toggle-bar {
+    & .menu__toggle-bar {
       display: block;
       width: 24px;
       height: 2px;
@@ -72,7 +76,7 @@
       fill: $color-base-black;
     }
 
-    & .navigation__toggle {
+    & .menu__toggle {
       position: absolute;
       right: 22px;
       top: 18px;
@@ -86,7 +90,7 @@
       cursor: pointer;
     }
 
-    & .navigation__toggle-bar {
+    & .menu__toggle-bar {
       &::before,
       &::after {
         content: "";
@@ -130,7 +134,7 @@
       fill: $color-base-black;
     }
 
-    & .navigation__toggle {
+    & .menu__toggle {
       display: none;
     }
 
