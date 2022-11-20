@@ -21,6 +21,14 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include vp-1023 {
+    padding: 30px 35px 26px;
+  }
+
+  @include vp-767 {
+    padding: 30px 25px 16px;
+  }
+
   &--astoria {
     background-image: image-set(
         "../img/astoria.webp" 1x,
@@ -29,6 +37,14 @@
         "../img/astoria@2x.jpg" 2x
         );
     background-position: -118px 1px;
+
+    @include vp-1023 {
+      background-position: -96px 1px;
+    }
+
+    @include vp-767 {
+      background-position: -115px 1px;
+    }
   }
 
   &--eline {
@@ -48,6 +64,14 @@
       "../img/atlantis@2x.jpg" 2x
       );
     background-position: -123px 0;
+
+    @include vp-1023 {
+      background-position: -98px 0;
+    }
+
+    @include vp-767 {
+      background-position: -118px 0;
+    }
   }
 
   &--odissei {
@@ -58,6 +82,14 @@
       "../img/odissei@2x.jpg" 2x
       );
     background-position: -117px 1px;
+
+    @include vp-1023 {
+      background-position: -88px 21px;
+    }
+
+    @include vp-767 {
+      background-position: -106px 19px;
+    }
   }
 
   &--olimpia {
@@ -68,6 +100,14 @@
       "../img/olimpia@2x.jpg" 2x
       );
     background-position: -117px 1px;
+
+    @include vp-1023 {
+      background-position: -130px 20px;
+    }
+
+    @include vp-767 {
+      background-position: -134px 16px;
+    }
   }
 
   &--aurora {
@@ -78,6 +118,14 @@
       "../img/aurora@2x.jpg" 2x
       );
     background-position: -105px 1px;
+
+    @include vp-1023 {
+      background-position: -100px 1px;
+    }
+
+    @include vp-767 {
+      background-position: -119px 1px;
+    }
   }
 
   &--leonor {
@@ -88,6 +136,14 @@
       "../img/leonor@2x.jpg" 2x
       );
     background-position: -147px 1px;
+
+    @include vp-1023 {
+      background-position: -125px 5px;
+    }
+
+    @include vp-767 {
+      background-position: -143px 5px;
+    }
   }
 
   &--minion {
@@ -98,6 +154,14 @@
       "../img/minion@2x.jpg" 2x
       );
     background-position: -176px 0;
+
+    @include vp-1023 {
+      background-position: -167px 0;
+    }
+
+    @include vp-767 {
+      background-position: -172px 0;
+    }
   }
 }
 
@@ -117,6 +181,14 @@
   overflow-y: auto;
   background-color: $color-base-black;
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+
+  @include vp-1023 {
+    padding: 16px 35px 34px;
+  }
+
+  @include vp-767 {
+    padding: 16px 25px 34px;
+  }
 
   & .card__title {
     padding: 0;

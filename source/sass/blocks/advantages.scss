@@ -10,7 +10,7 @@
   background-size: cover;
 
   @include vp-1023 {
-    min-height: 638px;
+    min-height: 588px;
     background-image: image-set(
       "../img/advantages-bg-tablet.webp" 1x,
       "../img/advantages-bg-tablet@2x.webp" 2x,
@@ -35,7 +35,7 @@
   text-align: center;
 
   @include vp-767 {
-    margin: 0 0 40px;
+    margin: 0 0 30px;
   }
 }
 
@@ -51,6 +51,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
 
@@ -60,7 +61,7 @@
   color: $color-base-black;
 
   @include vp-1023 {
-    padding: 26px 20px 5px;
+    padding: 26px 16px 9px 20px;
   }
 
   @include vp-767 {
@@ -72,12 +73,32 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+
+    @include vp-767 {
+      margin: 0 0 7px;
+    }
   }
 
   & p {
     margin: 0 0 20px;
     font-size: 14px;
     line-height: 20px;
+
+    @include vp-1023 {
+      margin: 0 0 10px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 13px;
+    }
+  }
+
+  & br {
+    display: none;
+
+    @include vp-1023 {
+      display: block;
+    }
   }
 }
 
@@ -85,7 +106,7 @@
   margin: 0 0 12px;
 
   @include vp-1023 {
-    margin: 0 0 24px;
+    margin: 0 0 12px;
 
     &--ship {
       width: 21px;
@@ -101,5 +122,9 @@
       width: 36px;
       height: 26px;
     }
+  }
+
+  @include vp-767 {
+    margin: 0 0 13px;
   }
 }

@@ -33,6 +33,10 @@
 
 .booking__text {
   margin: 163px 0 0;
+
+  @include vp-1023 {
+    margin: 0;
+  }
 }
 
 .booking__title {
@@ -43,13 +47,14 @@
   color: $color-base-black;
 
   @include vp-1023 {
-    margin: 0 0 25px;
+    margin: 0 0 4px;
     text-align: center;
     font-size: 34px;
     line-height: 51px;
   }
 
   @include vp-767 {
+    margin: 0 0 14px;
     font-size: 24px;
     line-height: 31px;
   }
@@ -63,15 +68,23 @@
 
   @include vp-1023 {
     width: 55%;
-    margin: 0 auto 60px;
+    margin: 0 auto 52px;
     text-align: center;
   }
 
   @include vp-767 {
-    width: 80%;
-    margin: 0 auto 40px;
+    width: 90%;
+    margin: 0 auto 34px;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  & br {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+    }
   }
 }
 
@@ -86,6 +99,6 @@
 
   @include vp-767 {
     width: 290px;
-    padding: 40px 30px;
+    padding: 33px 30px 40px;
   }
 }

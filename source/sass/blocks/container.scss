@@ -14,11 +14,11 @@
 
     @include vp-1023 {
       grid-template-columns: 1fr 74%;
-      padding: 35px 45px;
+      padding: 26px 45px 30px;
     }
 
     @include vp-767 {
-      padding: 20px 15px 30px;
+      padding: 16px 15px 30px;
     }
   }
 
@@ -26,11 +26,11 @@
     padding: 162px 145px 100px;
 
     @include vp-1023 {
-      padding: 158px 45px 70px;
+      padding: 182px 45px 70px;
     }
 
     @include vp-767 {
-      padding: 66px 15px 0;
+      padding: 100px 15px 0;
     }
   }
 
@@ -42,14 +42,15 @@
     padding: 120px 50px 145px;
 
     @include vp-1023 {
+      grid-template-columns: 1fr 324px;
       gap: 25px;
-      padding: 100px 45px;
+      padding: 100px 50px 53px 45px;
     }
 
     @include vp-767 {
       grid-template-columns: 1fr;
-      gap: 50px;
-      padding: 65px 15px 85px;
+      gap: 44px;
+      padding: 67px 15px 85px;
     }
   }
 
@@ -57,11 +58,11 @@
     padding: 110px 50px 119px;
 
     @include vp-1023 {
-      padding: 100px 45px;
+      padding: 88px 45px 100px;
     }
 
     @include vp-767 {
-      padding: 65px 15px;
+      padding: 56px 15px 66px;
     }
   }
 
@@ -69,11 +70,11 @@
     padding: 84px 65px 122px;
 
     @include vp-1023 {
-      padding: 100px 60px;
+      padding: 90px 60px 100px;
     }
 
     @include vp-767 {
-      padding: 65px 25px;
+      padding: 57px 25px 65px;
     }
   }
 
@@ -85,11 +86,11 @@
 
     @include vp-1023 {
       grid-template-columns: 1fr;
-      padding: 100px 60px;
+      padding: 90px 60px;
     }
 
     @include vp-767 {
-      padding: 65px 15px;
+      padding: 59px 15px;
     }
   }
 
@@ -109,7 +110,7 @@
       display: flex;
       flex-direction: column;
       gap: 43px;
-      padding: 65px 15px;
+      padding: 58px 15px;
     }
   }
 
@@ -123,12 +124,12 @@
     @include vp-1023 {
       grid-template-columns: 38px 1fr 87px;
       gap: 25px;
-      padding: 50px 45px;
+      padding: 46px 45px;
     }
 
     @include vp-767 {
       grid-template-columns: 1fr;
-      gap: 30px;
+      gap: 25px;
       padding: 40px 15px;
     }
   }

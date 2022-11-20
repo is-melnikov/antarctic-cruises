@@ -34,4 +34,8 @@
 
 .main-header__logo {
   margin: 2px 0 0;
+
+  @include vp-1023 {
+    margin: 4px 0 0;
+  }
 }

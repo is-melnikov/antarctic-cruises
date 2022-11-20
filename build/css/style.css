@@ -718,6 +718,10 @@ button,
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.main-block__description br {
+  display: none;
+}
+
 .logo__icon {
   fill: #f9fbfd;
 }
@@ -815,6 +819,10 @@ button,
   margin: 0 0 20px;
   font-size: 14px;
   line-height: 20px;
+}
+
+.advantages__item br {
+  display: none;
 }
 
 .advantages__icon {
@@ -1002,6 +1010,10 @@ button,
   color: #011c40;
 }
 
+.booking__description br {
+  display: none;
+}
+
 .booking__form {
   width: 403px;
   -ms-grid-column-align: end;
@@ -1136,6 +1148,10 @@ button,
   opacity: 0.3;
 }
 
+.form br {
+  display: none;
+}
+
 .contacts__map-wrapper {
   width: 560px;
   height: 306px;
@@ -1196,6 +1212,10 @@ button,
 
 .contacts__link {
   line-height: 24px;
+}
+
+.contacts__link br {
+  display: none;
 }
 
 .main-footer {
@@ -1322,33 +1342,39 @@ button,
     background-image: image-set("../img/main-bg-tablet.webp" 1x, "../img/main-bg-tablet@2x.webp" 2x, "../img/main-bg-tablet.jpg" 1x, "../img/main-bg-tablet.jpg" 2x);
   }
 
+  .main-header__logo {
+    margin: 4px 0 0;
+  }
+
   .container--main-header {
     -ms-grid-columns: 1fr 74%;
     grid-template-columns: 1fr 74%;
-    padding: 35px 45px;
+    padding: 26px 45px 30px;
   }
 
   .container--main-block {
-    padding: 158px 45px 70px;
+    padding: 182px 45px 70px;
   }
 
   .container--promo-block {
+    -ms-grid-columns: 1fr 324px;
+    grid-template-columns: 1fr 324px;
     gap: 25px;
-    padding: 100px 45px;
+    padding: 100px 50px 53px 45px;
   }
 
   .container--advantages {
-    padding: 100px 45px;
+    padding: 88px 45px 100px;
   }
 
   .container--cruises {
-    padding: 100px 60px;
+    padding: 90px 60px 100px;
   }
 
   .container--booking {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 100px 60px;
+    padding: 90px 60px;
   }
 
   .container--contacts {
@@ -1362,11 +1388,11 @@ button,
     -ms-grid-columns: 38px 1fr 87px;
     grid-template-columns: 38px 1fr 87px;
     gap: 25px;
-    padding: 50px 45px;
+    padding: 46px 45px;
   }
 
   .main-block__title {
-    margin: 0 0 29px;
+    margin: 0 0 12px;
     font-size: 50px;
     line-height: 61px;
     text-shadow: none;
@@ -1392,8 +1418,12 @@ button,
     line-height: 17px;
   }
 
+  .promo-block__text-wrapper {
+    margin: -10px 0 0;
+  }
+
   .promo-block__title {
-    margin: 0 0 30px;
+    margin: 0 0 17px;
     font-size: 26px;
     line-height: 36px;
   }
@@ -1403,7 +1433,7 @@ button,
   }
 
   .advantages {
-    min-height: 638px;
+    min-height: 588px;
     background-image: -webkit-image-set(url("../img/advantages-bg-tablet.webp") 1x, url("../img/advantages-bg-tablet@2x.webp") 2x, url("../img/advantages-bg-tablet.jpg") 1x, url("../img/advantages-bg-tablet.jpg") 2x);
     background-image: image-set("../img/advantages-bg-tablet.webp" 1x, "../img/advantages-bg-tablet@2x.webp" 2x, "../img/advantages-bg-tablet.jpg" 1x, "../img/advantages-bg-tablet.jpg" 2x);
   }
@@ -1414,11 +1444,19 @@ button,
   }
 
   .advantages__item {
-    padding: 26px 20px 5px;
+    padding: 26px 16px 9px 20px;
+  }
+
+  .advantages__item p {
+    margin: 0 0 10px;
+  }
+
+  .advantages__item br {
+    display: block;
   }
 
   .advantages__icon {
-    margin: 0 0 24px;
+    margin: 0 0 12px;
   }
 
   .advantages__icon--ship {
@@ -1436,14 +1474,58 @@ button,
     height: 26px;
   }
 
+  .cruises__list {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 309px));
+  }
+
+  .card__wrapper {
+    padding: 30px 35px 26px;
+  }
+
+  .card__wrapper--astoria {
+    background-position: -96px 1px;
+  }
+
+  .card__wrapper--atlantis {
+    background-position: -98px 0;
+  }
+
+  .card__wrapper--odissei {
+    background-position: -88px 21px;
+  }
+
+  .card__wrapper--olimpia {
+    background-position: -130px 20px;
+  }
+
+  .card__wrapper--aurora {
+    background-position: -100px 1px;
+  }
+
+  .card__wrapper--leonor {
+    background-position: -125px 5px;
+  }
+
+  .card__wrapper--minion {
+    background-position: -167px 0;
+  }
+
+  .card__content {
+    padding: 16px 35px 34px;
+  }
+
   .booking {
     min-height: 805px;
     background-image: -webkit-image-set(url("../img/booking-bg-tablet.webp") 1x, url("../img/booking-bg-tablet@2x.webp") 2x, url("../img/booking-bg-tablet.jpg") 1x, url("../img/booking-bg-tablet@2x.jpg") 2x);
     background-image: image-set("../img/booking-bg-tablet.webp" 1x, "../img/booking-bg-tablet@2x.webp" 2x, "../img/booking-bg-tablet.jpg" 1x, "../img/booking-bg-tablet@2x.jpg" 2x);
   }
 
+  .booking__text {
+    margin: 0;
+  }
+
   .booking__title {
-    margin: 0 0 25px;
+    margin: 0 0 4px;
     text-align: center;
     font-size: 34px;
     line-height: 51px;
@@ -1451,7 +1533,7 @@ button,
 
   .booking__description {
     width: 55%;
-    margin: 0 auto 60px;
+    margin: 0 auto 52px;
     text-align: center;
   }
 
@@ -1467,12 +1549,24 @@ button,
     background-image: image-set("../img/map-tablet.webp" 1x, "../img/map-tablet@2x.webp" 2x, "../img/map-tablet.jpg" 1x, "../img/map-tablet@2x.jpg" 2x);
   }
 
+  .contacts__wrapper {
+    margin: 67px 0 0;
+  }
+
   .contacts__description {
-    margin: 0 0 40px;
+    margin: 0 0 28px;
   }
 
   .contacts__list {
-    gap: 33px;
+    gap: 20px;
+  }
+
+  .contacts__icon {
+    margin: 3px 10px 0 0;
+  }
+
+  .contacts__link br {
+    display: block;
   }
 
   .main-footer__navigation .navigation__link {
@@ -1512,30 +1606,30 @@ button,
   }
 
   .container--main-header {
-    padding: 20px 15px 30px;
+    padding: 16px 15px 30px;
   }
 
   .container--main-block {
-    padding: 66px 15px 0;
+    padding: 100px 15px 0;
   }
 
   .container--promo-block {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 50px;
-    padding: 65px 15px 85px;
+    gap: 44px;
+    padding: 67px 15px 85px;
   }
 
   .container--advantages {
-    padding: 65px 15px;
+    padding: 56px 15px 66px;
   }
 
   .container--cruises {
-    padding: 65px 25px;
+    padding: 57px 25px 65px;
   }
 
   .container--booking {
-    padding: 65px 15px;
+    padding: 59px 15px;
   }
 
   .container--contacts {
@@ -1547,13 +1641,13 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 43px;
-    padding: 65px 15px;
+    padding: 58px 15px;
   }
 
   .container--main-footer {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 25px;
     padding: 40px 15px;
   }
 
@@ -1563,12 +1657,12 @@ button,
 
   .menu--closed .menu__toggle {
     position: absolute;
-    right: 22px;
+    right: 15px;
     top: 24px;
     z-index: 2;
     display: block;
     width: 24px;
-    height: 12px;
+    height: 13px;
     padding: 0;
     background-color: transparent;
     border: 0;
@@ -1607,7 +1701,7 @@ button,
     top: 0;
     right: 0;
     display: block;
-    width: 90%;
+    width: 89%;
     min-height: 500px;
     padding: 85px 25px 25px;
     background-color: #f9fbfd;
@@ -1615,8 +1709,8 @@ button,
 
   .menu--opened .main-header__logo {
     position: absolute;
-    top: 20px;
-    left: 15%;
+    top: 16px;
+    left: 16%;
     z-index: 2;
     fill: #011c40;
   }
@@ -1625,10 +1719,14 @@ button,
     fill: #011c40;
   }
 
+  .menu--opened .navigation__list {
+    gap: 28px;
+  }
+
   .menu--opened .menu__toggle {
     position: absolute;
-    right: 22px;
-    top: 18px;
+    right: 10px;
+    top: 20px;
     z-index: 2;
     display: block;
     width: 13px;
@@ -1645,7 +1743,7 @@ button,
     position: absolute;
     top: 10px;
     right: 3px;
-    width: 16px;
+    width: 18px;
     height: 2px;
     background-color: #011c40;
   }
@@ -1704,9 +1802,13 @@ button,
   }
 
   .main-block__title {
-    margin: 0 0 25px;
+    margin: 0 0 10px;
     font-size: 36px;
     line-height: 45px;
+  }
+
+  .main-block__description br {
+    display: block;
   }
 
   .main-block__description {
@@ -1726,6 +1828,10 @@ button,
     flex-direction: column;
   }
 
+  .navigation__list--footer {
+    gap: 12px;
+  }
+
   .navigation__link {
     gap: 26px;
     font-size: 18px;
@@ -1733,6 +1839,7 @@ button,
   }
 
   .promo-block__title {
+    margin: 0 0 15px;
     font-size: 24px;
     line-height: 34px;
   }
@@ -1748,20 +1855,69 @@ button,
   }
 
   .advantages__title {
-    margin: 0 0 40px;
+    margin: 0 0 30px;
   }
 
   .advantages__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .advantages__item {
     padding: 25px 20px 5px;
   }
 
+  .advantages__item h3 {
+    margin: 0 0 7px;
+  }
+
+  .advantages__item p {
+    margin: 0 0 13px;
+  }
+
+  .advantages__icon {
+    margin: 0 0 13px;
+  }
+
   .cruises__title {
-    margin: 0 0 40px;
+    margin: 0 0 30px;
+  }
+
+  .card__wrapper {
+    padding: 30px 25px 16px;
+  }
+
+  .card__wrapper--astoria {
+    background-position: -115px 1px;
+  }
+
+  .card__wrapper--atlantis {
+    background-position: -118px 0;
+  }
+
+  .card__wrapper--odissei {
+    background-position: -106px 19px;
+  }
+
+  .card__wrapper--olimpia {
+    background-position: -134px 16px;
+  }
+
+  .card__wrapper--aurora {
+    background-position: -119px 1px;
+  }
+
+  .card__wrapper--leonor {
+    background-position: -143px 5px;
+  }
+
+  .card__wrapper--minion {
+    background-position: -172px 0;
+  }
+
+  .card__content {
+    padding: 16px 25px 34px;
   }
 
   .booking {
@@ -1771,30 +1927,50 @@ button,
   }
 
   .booking__title {
+    margin: 0 0 14px;
     font-size: 24px;
     line-height: 31px;
   }
 
   .booking__description {
-    width: 80%;
-    margin: 0 auto 40px;
+    width: 90%;
+    margin: 0 auto 34px;
     font-size: 16px;
     line-height: 22px;
   }
 
+  .booking__description br {
+    display: block;
+  }
+
   .booking__form {
     width: 290px;
-    padding: 40px 30px;
+    padding: 33px 30px 40px;
+  }
+
+  .form h3 {
+    margin: 0 0 24px;
+    text-align: center;
+  }
+
+  .form input {
+    padding: 12px 16px 10px;
   }
 
   .form label:last-of-type {
+    margin: 0 0 26px;
     padding: 0 0 0 28px;
     line-height: 12px;
   }
 
   .form label:last-of-type span::before {
+    top: 0;
     width: 20px;
     height: 20px;
+  }
+
+  .form br {
+    display: block;
   }
 
   .contacts__map-wrapper {
@@ -1805,6 +1981,14 @@ button,
     height: 316px;
     background-image: -webkit-image-set(url("../img/map-mobile.webp") 1x, url("../img/map-mobile@2x.webp") 2x, url("../img/map-mobile.jpg") 1x, url("../img/map-mobile@2x.jpg") 2x);
     background-image: image-set("../img/map-mobile.webp" 1x, "../img/map-mobile@2x.webp" 2x, "../img/map-mobile.jpg" 1x, "../img/map-mobile@2x.jpg" 2x);
+  }
+
+  .contacts__wrapper {
+    margin: 0;
+  }
+
+  .social__list {
+    margin: 0;
   }
 
   .title {
