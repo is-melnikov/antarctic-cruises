@@ -735,7 +735,7 @@ button,
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
-  gap: 33px;
+  gap: 33.5px;
 }
 
 .navigation__link {
@@ -1004,6 +1004,7 @@ button,
 }
 
 .booking__description {
+  width: 75%;
   margin: 0;
   font-size: 18px;
   line-height: 27px;
@@ -1100,7 +1101,7 @@ button,
   padding: 0 0 0 23px;
   font-size: 10px;
   line-height: 14px;
-  color: #ffffff;
+  color: #f9fbfd;
   cursor: pointer;
 }
 
@@ -1347,8 +1348,8 @@ button,
   }
 
   .container--main-header {
-    -ms-grid-columns: 1fr 74%;
-    grid-template-columns: 1fr 74%;
+    -ms-grid-columns: 1fr 75%;
+    grid-template-columns: 1fr 75%;
     padding: 26px 45px 30px;
   }
 
@@ -1410,7 +1411,7 @@ button,
   }
 
   .navigation__list {
-    gap: 23px;
+    gap: 24px;
   }
 
   .navigation__link {
@@ -1909,7 +1910,7 @@ button,
   }
 
   .card__wrapper--leonor {
-    background-position: -143px 5px;
+    background-position: -143px 1px;
   }
 
   .card__wrapper--minion {

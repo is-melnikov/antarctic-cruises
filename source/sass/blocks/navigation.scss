@@ -2,10 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  gap: 33px;
+  gap: 33.5px;
 
   @include vp-1023 {
-    gap: 23px;
+    gap: 24px;
   }
 
   @include vp-767 {
