@@ -4,11 +4,11 @@
 
 .menu--closed {
   @include vp-767 {
-    & .navigation {
+    .navigation {
       display: none;
     }
 
-    & .menu__toggle {
+    .menu__toggle {
       position: absolute;
       right: 15px;
       top: 24px;
@@ -22,7 +22,7 @@
       cursor: pointer;
     }
 
-    & .menu__toggle-bar {
+    .menu__toggle-bar {
       display: block;
       width: 24px;
       height: 2px;
@@ -53,38 +53,39 @@
 
 .menu--opened {
   @include vp-767 {
-    & .navigation {
+    .navigation {
       position: absolute;
       top: 0;
       right: 0;
+      z-index: 11;
       display: block;
       width: 89%;
-      min-height: 500px;
+      min-height: 100vh;
       padding: 85px 25px 25px;
       background-color: $color-base-white;
     }
 
-    & .main-header__logo {
+    .main-header__logo {
       position: absolute;
       top: 16px;
       left: 16%;
-      z-index: 2;
+      z-index: 12;
       fill: $color-base-black;
     }
 
-    & .logo__icon {
+    .logo__icon {
       fill: $color-base-black;
     }
 
-    & .navigation__list {
+    .navigation__list {
       gap: 28px;
     }
 
-    & .menu__toggle {
+    .menu__toggle {
       position: absolute;
       right: 10px;
       top: 20px;
-      z-index: 2;
+      z-index: 12;
       display: block;
       width: 13px;
       height: 13px;
@@ -94,7 +95,7 @@
       cursor: pointer;
     }
 
-    & .menu__toggle-bar {
+    .menu__toggle-bar {
       &::before,
       &::after {
         content: "";
@@ -115,16 +116,18 @@
       }
     }
 
-    & .navigation__link {
+    .navigation__link {
       color: $color-base-black;
     }
 
-    & .overlay {
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 10;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       background-color: rgba(0, 42, 102, 0.5);
     }
   }
@@ -132,27 +135,27 @@
 
 .menu--nojs {
   @include vp-767 {
-    & .main-header__logo {
+    .main-header__logo {
       position: static;
       align-self: start;
       fill: $color-base-black;
     }
 
-    & .menu__toggle {
+    .menu__toggle {
       display: none;
     }
 
-    & .navigation {
+    .navigation {
       display: block;
       min-height: auto;
       padding: 0;
     }
 
-    & .navigation__list {
+    .navigation__list {
       gap: 8px;
     }
 
-    & .navigation__link {
+    .navigation__link {
       font-size: 14px;
       line-height: 17px;
       color: $color-base-white;

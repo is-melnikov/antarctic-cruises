@@ -4,12 +4,12 @@
   flex-direction: column;
   min-height: 100vh;
 
-  .header,
-  .footer {
+  .main-header,
+  .main-footer {
     flex-shrink: 0;
   }
 
-  main {
+  .main-page {
     flex-grow: 1;
   }
 }
