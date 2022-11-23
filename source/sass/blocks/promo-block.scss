@@ -19,7 +19,7 @@
 .promo-block__title {
   margin: 0 0 24px;
 
-  & br {
+  br {
     display: none;
   }
 
@@ -28,7 +28,7 @@
     font-size: 26px;
     line-height: 36px;
 
-    & br {
+    br {
       display: block;
     }
   }
@@ -48,9 +48,4 @@
   width: 560px;
   height: 100%;
   object-fit: cover;
-
-  // @include vp-1023 {
-  //   width: 324px;
-  //   height: 174px;
-  // }
 }

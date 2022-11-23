@@ -9,7 +9,7 @@
 .main-footer__navigation {
   justify-self: start;
 
-  & .navigation__link {
+  .navigation__link {
     @include vp-1023 {
       font-size: 12px;
       line-height: 15px;
