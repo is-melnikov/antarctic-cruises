@@ -1,4 +1,5 @@
 const HTML = document.querySelector('html');
+const MAIN_HEADER = document.querySelector('.main-header');
 const MENU = document.querySelector('.menu');
 const NAV_TOGGLE = document.querySelector('.menu__toggle');
 const NAV_LIST = document.querySelector('.navigation__list');
@@ -6,8 +7,10 @@ const NAV_LIST = document.querySelector('.navigation__list');
 const addsStyles = () => {
   if (HTML.style.getPropertyValue('overflow-y') === 'auto') {
     HTML.style.setProperty('overflow-y', 'hidden');
+    MAIN_HEADER.classList.add('main-header--overlay');
   } else {
     HTML.style.setProperty('overflow-y', 'auto');
+    MAIN_HEADER.classList.remove('main-header--overlay');
   }
 };
 

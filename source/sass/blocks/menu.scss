@@ -53,22 +53,21 @@
 
 .menu--opened {
   @include vp-767 {
-    .navigation {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 11;
-      display: block;
-      width: 89%;
-      min-height: 100vh;
-      padding: 85px 25px 25px;
-      background-color: $color-base-white;
-    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    display: block;
+    width: 89%;
+    height: 100vh;
+    padding: 85px 25px 25px;
+    background-color: $color-base-white;
+    overflow-y: auto;
 
     .main-header__logo {
       position: absolute;
       top: 16px;
-      left: 16%;
+      left: 5%;
       z-index: 12;
       fill: $color-base-black;
     }
@@ -118,17 +117,6 @@
 
     .navigation__link {
       color: $color-base-black;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
-      width: 100%;
-      height: 100vh;
-      background-color: rgba(0, 42, 102, 0.5);
     }
   }
 }
