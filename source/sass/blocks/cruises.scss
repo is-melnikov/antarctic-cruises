@@ -8,16 +8,30 @@
 
 .cruises__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+  grid-template-columns: repeat(4, minmax(200px, 260px));
   justify-content: center;
   gap: 30px;
 
   @include vp-1023 {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 309px));
+    grid-template-columns: repeat(2, minmax(260px, 309px));
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
   }
 }
 
 .cruises__item {
   position: relative;
-  height: 386px;
+  height: auto;
+  aspect-ratio: 260/386;
+
+  @include vp-1023 {
+    aspect-ratio: 309/386;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 270/386;
+    width: 100%;
+  }
 }

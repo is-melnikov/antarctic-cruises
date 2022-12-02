@@ -703,23 +703,23 @@ button,
   display: none;
 }
 
-.main-block__title {
-  margin: 0 0 12px;
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.main-block__description {
+.main-block p {
   margin: 0;
   font-size: 20px;
   line-height: 24px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.main-block__description br {
+.main-block br {
   display: none;
+}
+
+.main-block__title {
+  margin: 0 0 12px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo__icon {
@@ -836,7 +836,8 @@ button,
 .cruises__list {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+  -ms-grid-columns: (minmax(200px, 260px))[4];
+  grid-template-columns: repeat(4, minmax(200px, 260px));
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -845,7 +846,8 @@ button,
 
 .cruises__item {
   position: relative;
-  height: 386px;
+  height: auto;
+  aspect-ratio: 260/386;
 }
 
 .card:hover .card__wrapper {
@@ -865,7 +867,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 386px;
+  height: auto;
   padding: 30px 30px 21px;
   background-color: #9dc1eb;
   background-size: cover;
@@ -926,6 +928,10 @@ button,
   line-height: 27px;
 }
 
+.card__title--content {
+  margin: 0;
+}
+
 .card__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,7 +941,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
-  height: 386px;
+  height: 100%;
   padding: 16px 25px 34px;
   overflow-y: auto;
   background-color: #011c40;
@@ -1392,16 +1398,16 @@ button,
     padding: 46px 45px;
   }
 
+  .main-block p {
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: none;
+  }
+
   .main-block__title {
     margin: 0 0 12px;
     font-size: 50px;
     line-height: 61px;
-    text-shadow: none;
-  }
-
-  .main-block__description {
-    font-size: 18px;
-    line-height: 22px;
     text-shadow: none;
   }
 
@@ -1476,7 +1482,12 @@ button,
   }
 
   .cruises__list {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 309px));
+    -ms-grid-columns: (minmax(260px, 309px))[2];
+    grid-template-columns: repeat(2, minmax(260px, 309px));
+  }
+
+  .cruises__item {
+    aspect-ratio: 309/386;
   }
 
   .card__wrapper {
@@ -1492,11 +1503,11 @@ button,
   }
 
   .card__wrapper--odissei {
-    background-position: -88px 21px;
+    background-position: -88px 0;
   }
 
   .card__wrapper--olimpia {
-    background-position: -130px 20px;
+    background-position: -130px 0;
   }
 
   .card__wrapper--aurora {
@@ -1504,7 +1515,7 @@ button,
   }
 
   .card__wrapper--leonor {
-    background-position: -125px 5px;
+    background-position: -125px 0;
   }
 
   .card__wrapper--minion {
@@ -1806,19 +1817,19 @@ button,
     color: #f9fbfd;
   }
 
+  .main-block p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .main-block br {
+    display: block;
+  }
+
   .main-block__title {
     margin: 0 0 10px;
     font-size: 36px;
     line-height: 45px;
-  }
-
-  .main-block__description br {
-    display: block;
-  }
-
-  .main-block__description {
-    font-size: 16px;
-    line-height: 22px;
   }
 
   .logo__icon {
@@ -1889,6 +1900,16 @@ button,
     margin: 0 0 30px;
   }
 
+  .cruises__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .cruises__item {
+    aspect-ratio: 270/386;
+    width: 100%;
+  }
+
   .card__wrapper {
     padding: 30px 25px 16px;
   }
@@ -1902,7 +1923,7 @@ button,
   }
 
   .card__wrapper--odissei {
-    background-position: -106px 19px;
+    background-position: -106px 0;
   }
 
   .card__wrapper--olimpia {
